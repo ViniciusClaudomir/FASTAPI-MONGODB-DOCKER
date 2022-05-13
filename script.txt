@@ -1,0 +1,2 @@
+docker build -t teste/api:v1 .
+docker save teste/api:v1 | (eval $(minikube docker-env) && docker load)
